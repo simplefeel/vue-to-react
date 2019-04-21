@@ -1,17 +1,53 @@
 ## input
 
 ```js
-import { Select as MySelect, Pagination } from 'xxx-ui';
-// import UI2 from 'xxx-ui';
-import \* as UI from 'xxx-ui';
+<template>
+
+<div>
+
+    <p class="title">
+        {{title}}
+    </p>
+
+    <p class="name">
+        {{name}}
+    </p>
+
+</div>
+
+</template>
+
+<script>
+export default {
+data() {
+    return {
+        show: true,
+        name: 'name',
+    };
+},
+};
+</script>
 ```
 
 ## output
 
 ```js
-import MySelect from 'xxx-ui/Select/Select.js';
-import Pagination from 'xxx-ui/Pagination/Pagination.js';
-// import UI2 from 'xxx-ui';
+export default class myComponent extends Component {
+	constructor(props) {
+		super(props);
+		this.state = {
+			show: true,
+			name: 'name',
+		};
+	}
+	render() {
+		return (
+			<div>
+				<p className="title">{title}</p>
 
-import \* as UI from 'xxx-ui';
+				<p className="name">{name}</p>
+			</div>
+		);
+	}
+}
 ```
