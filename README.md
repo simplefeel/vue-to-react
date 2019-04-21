@@ -1,4 +1,9 @@
 [在线预览Demo](https://codesandbox.io/s/1z2y5n622j)
+## usage
+1. `git clone`
+2. `npm install`
+3. `npm run test`
+
 ## input
 
 ```js
