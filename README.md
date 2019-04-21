@@ -2,29 +2,25 @@
 
 ```js
 <template>
-
-<div>
-
-    <p class="title">
-        {{title}}
-    </p>
-
-    <p class="name">
-        {{name}}
-    </p>
-
-</div>
+    <div>
+        <p class="title">
+            {{title}}
+        </p>
+        <p class="name">
+            {{name}}
+        </p>
+    </div>
 
 </template>
 
 <script>
 export default {
-data() {
-    return {
-        show: true,
-        name: 'name',
-    };
-},
+	data() {
+		return {
+			show: true,
+			name: 'name',
+		};
+	},
 };
 </script>
 ```
