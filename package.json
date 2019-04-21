@@ -1,0 +1,20 @@
+{
+	"name": "babel-plugin-demo",
+	"version": "1.0.0",
+	"description": "",
+	"main": "index.js",
+	"scripts": {
+		"build": "rm -rf lib && babel src --out-dir lib",
+		"test": "node ./test/index.js"
+	},
+	"author": "",
+	"license": "ISC",
+	"devDependencies": {
+		"@babel/core": "^7.4.3",
+		"@babel/types": "^7.4.0"
+	},
+	"dependencies": {
+		"vue-template-compiler": "^2.6.10",
+		"vue-to-react": "^1.0.0"
+	}
+}
